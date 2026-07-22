@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel — Automatize</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dash-login" id="dashLogin">
+  <div class="dash-login-card">
+    <a href="#" class="logo">
+      <img src="assets/logo-mark.png" alt="Automatize" class="logo-mark">
+      Automatize<span class="logo-dot">.</span>
+    </a>
+    <h1>Painel de leads</h1>
+    <p>Entre com sua conta para ver as interações do site.</p>
+    <input type="email" id="dashEmail" class="lead-input" placeholder="E-mail" autocomplete="username">
+    <input type="password" id="dashPassword" class="lead-input" placeholder="Senha" autocomplete="current-password">
+    <button type="button" id="dashLoginBtn" class="btn btn-primary btn-block">Entrar</button>
+    <p class="dash-login-error" id="dashLoginError"></p>
+  </div>
+</div>
+
+<div class="dash-app" id="dashApp" hidden>
+  <header class="dash-header">
+    <a href="#" class="logo">
+      <img src="assets/logo-mark.png" alt="Automatize" class="logo-mark">
+      Automatize<span class="logo-dot">.</span>
+    </a>
+    <button type="button" id="dashLogoutBtn" class="btn btn-outline">Sair</button>
+  </header>
+
+  <main class="dash-main">
+    <div class="dash-stats">
+      <div class="dash-stat"><span class="dash-stat-label">Total de leads</span><span class="dash-stat-value" id="statTotal">—</span></div>
+      <div class="dash-stat"><span class="dash-stat-label">Últimos 7 dias</span><span class="dash-stat-value" id="statWeek">—</span></div>
+      <div class="dash-stat"><span class="dash-stat-label">Plano mais escolhido</span><span class="dash-stat-value" id="statPlan">—</span></div>
+      <div class="dash-stat"><span class="dash-stat-label">Segmento mais comum</span><span class="dash-stat-value" id="statSegment">—</span></div>
+    </div>
+
+    <div class="dash-breakdown">
+      <div class="dash-panel">
+        <h3>Leads por plano</h3>
+        <div class="dash-bars" id="barsPlan"></div>
+      </div>
+      <div class="dash-panel">
+        <h3>Leads por segmento</h3>
+        <div class="dash-bars" id="barsSegment"></div>
+      </div>
+    </div>
+
+    <div class="dash-panel dash-table-panel">
+      <div class="dash-table-head">
+        <h3>Leads recentes</h3>
+        <input type="text" id="dashSearch" class="dash-search" placeholder="Buscar por nome ou negócio...">
+      </div>
+      <div class="dash-table-wrap">
+        <table class="dash-table">
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Negócio</th>
+              <th>Contato</th>
+              <th>Segmento</th>
+              <th>Objetivo</th>
+              <th>Plano</th>
+            </tr>
+          </thead>
+          <tbody id="leadsTableBody"></tbody>
+        </table>
+      </div>
+      <p class="dash-empty" id="dashEmpty" hidden>Nenhum lead ainda. Assim que alguém preencher o formulário do site, aparece aqui.</p>
+    </div>
+  </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>

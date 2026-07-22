@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentes de IA para WhatsApp — Automaizze</title>
+<meta name="description" content="Agentes de IA para WhatsApp que atendem, qualificam leads e agendam horários por você, 24 horas por dia. Conheça a Automaizze.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">
+      <img src="assets/logo-mark.png" alt="Automaizze" class="logo-mark">
+      Automaizze <span class="logo-tag">Agentes IA</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#recursos">Recursos</a>
+      <a href="#funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-cta">
+      <button type="button" class="btn btn-primary js-open-lead" data-product="Agente de IA para WhatsApp">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Falar no WhatsApp
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#recursos">Recursos</a>
+    <a href="#funciona">Como funciona</a>
+    <a href="#planos">Planos</a>
+    <a href="#contato">Contato</a>
+    <button type="button" class="btn btn-primary btn-block js-open-lead" data-product="Agente de IA para WhatsApp">Falar no WhatsApp</button>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">Agentes de IA para WhatsApp</span>
+    <h1>Um atendente de <span class="accent">IA</span> que nunca dorme e nunca perde um lead.</h1>
+    <p class="lead">Seu agente de IA responde no WhatsApp, qualifica clientes e agenda horários — enquanto você foca no que importa pro seu negócio.</p>
+    <div class="hero-actions">
+      <button type="button" class="btn btn-primary js-open-lead" data-product="Agente de IA para WhatsApp">
+        Quero meu agente de IA
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <a href="#funciona" class="btn btn-outline">Ver como funciona</a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Atendimento 24h</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sem trocar de número</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Treinado com seu negócio</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-visual reveal">
+      <div class="mac-window">
+        <div class="mac-bar">
+          <span class="mac-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></span>
+          <span class="mac-title">WhatsApp — Agente Automaizze</span>
+        </div>
+        <div class="chat-body">
+          <div class="chat-bubble user">Oi, vocês fazem entrega hoje ainda?</div>
+          <div class="chat-bubble agent">
+            <span class="chat-agent-label">🤖 Agente IA</span>
+            Fazemos sim! 🚚 A entrega de hoje ainda está disponível até as 18h. Quer que eu já separe seu pedido?
+          </div>
+          <div class="chat-bubble user">Quero sim, me manda o cardápio</div>
+          <div class="chat-typing" id="typingIndicator"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STAT STRIP ================= -->
+<section class="stat-strip">
+  <div class="container stat-strip-grid">
+    <div class="stat-strip-item"><strong>24/7</strong><span>Atendimento sem pausa</span></div>
+    <div class="stat-strip-item"><strong>&lt; 5s</strong><span>Tempo médio de resposta</span></div>
+    <div class="stat-strip-item"><strong>0</strong><span>Leads esquecidos na fila</span></div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features" id="recursos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recursos</span>
+      <h2>Tudo que seu <span class="accent">atendimento</span> precisa</h2>
+      <p>Um agente treinado especificamente com as informações do seu negócio.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Atendimento 24 horas</h3>
+        <p>Responde clientes de madrugada, fim de semana e feriado, sem parar.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg></div>
+        <h3>Qualificação de leads</h3>
+        <p>Identifica quem está pronto pra comprar antes de te chamar pra fechar.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Agendamento automático</h3>
+        <p>Marca horários direto na conversa, sem ida e volta de mensagens.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Respostas instantâneas</h3>
+        <p>Zero fila de espera — o cliente é respondido no mesmo segundo.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg></div>
+        <h3>Conhece seu negócio</h3>
+        <p>Treinado com seus produtos, preços e políticas — responde como você responderia.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Transfere pra um humano</h3>
+        <p>Quando a conversa precisa de você, o agente te chama na hora certa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section class="steps" id="funciona">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do zero ao agente <span class="accent">no ar</span> em poucos dias</h2>
+      <p>Um processo simples, sem trocar de número e sem complicação técnica.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num">01</div>
+        <h3>Contamos sobre seu negócio</h3>
+        <p>Você nos conta como funciona seu atendimento hoje: produtos, preços, horários.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">02</div>
+        <h3>Treinamos seu agente</h3>
+        <p>Ensinamos a IA com as informações reais da sua empresa.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">03</div>
+        <h3>Conectamos ao WhatsApp</h3>
+        <p>Direto no seu número atual — seus clientes nem percebem a mudança.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">04</div>
+        <h3>Ele entra em ação</h3>
+        <p>Atendendo, qualificando e agendando, todos os dias, sem pausa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section class="pricing" id="planos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Planos</span>
+      <h2>Agentes de IA <span class="accent">sob medida</span> pro seu negócio</h2>
+      <p>Pagamento único de implantação — sem mensalidade escondida. Escolha o nível de automação que faz sentido agora.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Básico</h3>
+        <p class="price-desc">Para quem quer começar a automatizar o atendimento.</p>
+        <div class="price-value">R$ 497</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>1 Agente de IA para WhatsApp ou Site</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Fluxo de atendimento padrão (FAQ)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Até 500 conversas inclusas</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-product="Agentes de IA — Plano Básico (R$ 497)">Quero esse plano</button>
+      </div>
+
+      <div class="price-card price-card--featured reveal">
+        <span class="price-badge">Recomendado</span>
+        <h3>Profissional</h3>
+        <p class="price-desc">O mais escolhido por quem já sabe que quer automatizar de verdade.</p>
+        <div class="price-value">R$ 997</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Até 2 agentes integrados (WhatsApp e Instagram)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Base de conhecimento personalizada (PDFs/Site)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Até 2.000 conversas inclusas</li>
+        </ul>
+        <button type="button" class="btn btn-primary btn-block js-open-lead" data-product="Agentes de IA — Plano Profissional (R$ 997)">Quero esse plano</button>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Avançado</h3>
+        <p class="price-desc">Para operações que precisam de IA em múltiplos canais.</p>
+        <div class="price-value">R$ 2.297</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Agentes customizados com múltiplos canais</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Integração completa com CRM e banco de dados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Conversas ilimitadas e suporte prioritário</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-product="Agentes de IA — Plano Avançado (R$ 2.297)">Quero esse plano</button>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Mentoria / Acompanhamento</h3>
+        <p class="price-desc">Pra equipe aprender a gerenciar a IA por conta própria.</p>
+        <div class="price-value">R$ 2.000</div>
+        <p class="price-note">pagamento único · imersão</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Diagnóstico de processos de atendimento</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Treinamento prático pra equipe gerenciar prompts e fluxos de IA</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-product="Agentes de IA — Mentoria/Acompanhamento (R$ 2.000)">Quero essa mentoria</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-banner" id="contato">
+  <div class="cta-box reveal">
+    <span class="eyebrow">Vamos começar</span>
+    <h2>Pronto para nunca mais <span class="accent">perder um lead</span>?</h2>
+    <p>Fale com a gente e receba um orçamento personalizado pro seu agente de IA.</p>
+    <button type="button" class="btn btn-primary js-open-lead" data-product="Agente de IA para WhatsApp">
+      <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      Falar no WhatsApp
+    </button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="assets/logo-mark.png" alt="Automaizze" class="logo-mark">
+          Automaizze
+        </a>
+        <p>Soluções de inteligência artificial sob medida para empresas que querem vender e atender melhor.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/autbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://wa.me/5565999868334" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Automaizze</h4>
+        <ul>
+          <li><a href="../">Automaizze IA</a></li>
+          <li><a href="../sites/">Automaizze Sites</a></li>
+          <li><a href="../assistentepessoal/">Assistente Pessoal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:automaizzemybusiness@gmail.com">automaizzemybusiness@gmail.com</a></li>
+          <li><a href="https://wa.me/5565999868334">+55 65 99986-8334</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Automaizze. Todos os direitos reservados.</span>
+      <a href="../">← Automaizze IA</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= LEAD FLOW MODAL ================= -->
+<div class="lead-modal" id="leadModal" aria-hidden="true">
+  <div class="lead-modal-backdrop" data-lead-close></div>
+  <div class="lead-modal-panel" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+    <button type="button" class="lead-modal-close" data-lead-close aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lead-progress"><span class="lead-progress-bar" id="leadProgressBar"></span></div>
+
+    <div class="lead-step" data-step="1">
+      <span class="eyebrow">Passo 1 de 4</span>
+      <h3 id="leadModalTitle">Qual o nome do seu negócio?</h3>
+      <p class="lead-step-sub">Assim já deixamos tudo pronto pra falar sobre o <strong id="leadPlanLabel1">Agente de IA</strong> com você.</p>
+      <input type="text" class="lead-input" id="leadBusiness" placeholder="Ex: Salão Bella Hair" autocomplete="off">
+      <input type="text" class="lead-input" id="leadWorkWith" placeholder="Trabalho com... (ex: cortes de cabelo e barba)" autocomplete="off">
+    </div>
+
+    <div class="lead-step" data-step="2">
+      <span class="eyebrow">Passo 2 de 4</span>
+      <h3>Qual o ramo do seu negócio?</h3>
+      <p class="lead-step-sub">Isso nos ajuda a treinar o agente do jeito certo.</p>
+      <div class="lead-chips" id="leadSegment">
+        <button type="button" class="chip" data-value="Clínica / Saúde">Clínica / Saúde</button>
+        <button type="button" class="chip" data-value="Loja / Varejo">Loja / Varejo</button>
+        <button type="button" class="chip" data-value="Restaurante">Restaurante</button>
+        <button type="button" class="chip" data-value="Advocacia">Advocacia</button>
+        <button type="button" class="chip" data-value="Salão de beleza">Salão de beleza</button>
+        <button type="button" class="chip" data-value="Imobiliária">Imobiliária</button>
+        <button type="button" class="chip" data-value="Academia">Academia</button>
+        <button type="button" class="chip" data-value="Outro">Outro</button>
+      </div>
+    </div>
+
+    <div class="lead-step" data-step="3">
+      <span class="eyebrow">Passo 3 de 4</span>
+      <h3>Qual seu maior objetivo?</h3>
+      <p class="lead-step-sub">Vamos priorizar isso na conversa.</p>
+      <div class="lead-chips" id="leadGoal">
+        <button type="button" class="chip" data-value="Captar mais clientes">Captar mais clientes</button>
+        <button type="button" class="chip" data-value="Automatizar atendimento">Automatizar atendimento</button>
+        <button type="button" class="chip" data-value="Nunca mais perder um lead">Nunca mais perder um lead</button>
+        <button type="button" class="chip" data-value="Economizar tempo">Economizar tempo</button>
+      </div>
+    </div>
+
+    <div class="lead-step" data-step="4">
+      <span class="eyebrow">Passo 4 de 4</span>
+      <h3>Para onde te chamamos?</h3>
+      <p class="lead-step-sub">Sem spam. Só usamos isso pra falar com você.</p>
+      <input type="text" class="lead-input" id="leadName" placeholder="Seu nome" autocomplete="name">
+      <input type="tel" class="lead-input" id="leadPhone" placeholder="WhatsApp com DDD" autocomplete="tel">
+      <input type="email" class="lead-input" id="leadEmail" placeholder="E-mail" autocomplete="email">
+    </div>
+
+    <div class="lead-step lead-step-success" data-step="5">
+      <h3>Recebi teu interesse.</h3>
+      <p class="lead-step-sub">Vou te chamar no WhatsApp para falar sobre o <strong id="leadPlanLabel2">Agente de IA</strong>. Se quiser adiantar, me chama agora:</p>
+      <a href="#" id="leadWhatsappBtn" target="_blank" rel="noopener" class="lead-whatsapp-btn">Chamar no WhatsApp <span class="arrow">→</span></a>
+      <p class="lead-fallback">Se o botão não abrir, me chama no <strong>+55 65 99986-8334</strong>.</p>
+    </div>
+
+    <p class="lead-error" id="leadError"></p>
+
+    <div class="lead-nav" id="leadNav">
+      <button type="button" class="btn btn-ghost" id="leadBack">Voltar</button>
+      <button type="button" class="btn btn-primary" id="leadNext">Continuar</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

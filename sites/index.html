@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automatize — Sites profissionais para empresas e pequenos negócios</title>
+<meta name="description" content="A Automatize cria sites rápidos, elegantes e focados em conversão para empresas e pequenos negócios. Diagnóstico gratuito e entrega em até 5 dias.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">
+      <img src="assets/logo-mark.png" alt="Automatize" class="logo-mark">
+      Automatize<span class="logo-dot">.</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Processo</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#precos">Preços</a>
+      <a href="#faq">FAQ</a>
+      <a href="../">Automaizze IA ↗</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#precos" class="btn btn-primary">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Começar agora
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#servicos">Serviços</a>
+    <a href="#processo">Processo</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#precos">Preços</a>
+    <a href="#faq">FAQ</a>
+    <a href="../">Automaizze IA ↗</a>
+    <a href="#precos" class="btn btn-primary btn-block">Começar agora</a>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-comet" aria-hidden="true">
+    <svg viewBox="-100 -60 1300 340" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="cometGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#c6ff4d" stop-opacity="0"/>
+          <stop offset="12%" stop-color="#c6ff4d" stop-opacity="0"/>
+          <stop offset="60%" stop-color="#c6ff4d" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#c6ff4d" stop-opacity="1"/>
+        </linearGradient>
+        <filter id="cometGlow" x="-60%" y="-300%" width="220%" height="700%">
+          <feGaussianBlur stdDeviation="8"/>
+        </filter>
+        <filter id="sparkGlow" x="-300%" y="-300%" width="700%" height="700%">
+          <feGaussianBlur stdDeviation="4"/>
+        </filter>
+      </defs>
+      <path d="M0,220 Q550,0 1100,220" fill="none" stroke="url(#cometGrad)" stroke-width="14" stroke-linecap="round" filter="url(#cometGlow)" opacity="0.55"/>
+      <path d="M0,220 Q550,0 1100,220" fill="none" stroke="url(#cometGrad)" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="1100" cy="220" r="4.5" fill="#eaffb8" filter="url(#cometGlow)"/>
+      <circle cx="1100" cy="220" r="2.5" fill="#eaffb8"/>
+      <circle class="hero-comet-spark" r="3.2" fill="#eaffb8" filter="url(#sparkGlow)">
+        <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto" path="M0,220 Q550,0 1100,220"/>
+        <animate attributeName="opacity" values="0;0;0.9;0.9;0" keyTimes="0;0.08;0.5;0.88;1" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+  </div>
+  <div class="container hero-inner">
+    <span class="eyebrow">Vagas abertas para este mês</span>
+    <h1>O futuro do seu negócio rodando no <span class="text-gradient">automático</span>.</h1>
+    <p class="lead">Da criação do seu site profissional à implementação de agentes de IA personalizados. Menos esforço, mais conversão.</p>
+
+    <div class="hero-actions">
+      <a href="#contato" class="btn btn-primary">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Quero meu site agora
+      </a>
+      <a href="#portfolio" class="btn btn-outline">Ver portfólio</a>
+    </div>
+
+    <div class="hero-badges">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Entrega em até 5 dias</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Garantia de satisfação</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Suporte incluso</span>
+    </div>
+  </div>
+
+  <div class="trusted">
+    <p>Feito para negócios como o seu</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Clínicas</span><span>Advocacia</span><span>Restaurantes</span><span>Lojas</span><span>Salões de beleza</span><span>Imobiliárias</span><span>Academias</span><span>Prestadores de serviço</span>
+        <span>Clínicas</span><span>Advocacia</span><span>Restaurantes</span><span>Lojas</span><span>Salões de beleza</span><span>Imobiliárias</span><span>Academias</span><span>Prestadores de serviço</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-visual reveal">
+      <div class="float-card fc-1">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></span>
+        <span>
+          <span class="label">Design</span><br>
+          <span class="value">Focado em resultado</span>
+        </span>
+      </div>
+      <div class="float-card fc-2">
+        <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span>
+        <span>
+          <span class="label">Automação</span><br>
+          <span class="value">Leads no piloto automático</span>
+        </span>
+      </div>
+
+      <div class="browser-frame">
+        <div class="browser-bar">
+          <span></span><span></span><span></span>
+          <span class="url">seunegocio.com.br</span>
+        </div>
+        <div class="browser-body">
+          <div class="mock-nav">
+            <div class="mock-nav-left">
+              <span class="mock-brand">Sua Marca</span>
+              <div class="mock-nav-links"><span>Início</span><span>Serviços</span><span>Contato</span></div>
+            </div>
+            <div class="mock-nav-cta">Agendar</div>
+          </div>
+          <div class="mock-title">O futuro do seu negócio rodando no automático.</div>
+          <div class="mock-subtitle">Da criação do seu site profissional à implementação de agentes de IA personalizados. Menos esforço, mais conversão.</div>
+          <div class="mock-btn">Agendar agora <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+          <div class="mock-feature-grid">
+            <div class="mock-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <span>Agendamento online</span>
+            </div>
+            <div class="mock-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>Avaliações de clientes</span>
+            </div>
+            <div class="mock-feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <span>Atendimento no WhatsApp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">O que fazemos</span>
+      <h2>Tudo o que seu negócio precisa <span class="accent">para vender online</span></h2>
+      <p>Do primeiro clique até o fechamento da venda, cuidamos de cada detalhe do seu site.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></div>
+        <h3>Landing Pages</h3>
+        <p>Páginas de alta conversão para campanhas, lançamentos e captação de leads qualificados.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Sites Institucionais</h3>
+        <p>Presença digital sólida e profissional que transmite confiança para o seu negócio.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M1 1h4l2.6 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+        <h3>Lojas Virtuais</h3>
+        <p>E-commerces simples de gerenciar, prontos para vender 24 horas por dia.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Automação &amp; Integrações</h3>
+        <p>Agentes de IA para WhatsApp e Telegram, formulários e CRM conectados — um assistente que atende, agenda e responde por você, como um Jarvis particular para o seu negócio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="process" id="processo">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">Como funciona</span>
+      <h2>Do diagnóstico ao <span class="accent">site no ar</span> em poucos dias</h2>
+      <p>Um processo simples, transparente e sem enrolação.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="process-num">01</div>
+        <h3>Diagnóstico</h3>
+        <p>Entendemos seu negócio, seu público e seus objetivos em uma conversa de 15 minutos.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">02</div>
+        <h3>Design</h3>
+        <p>Criamos um layout exclusivo, alinhado à sua marca e pensado para conversão.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">03</div>
+        <h3>Desenvolvimento</h3>
+        <p>Construímos o site com performance, responsividade e SEO desde o início.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">04</div>
+        <h3>Lançamento</h3>
+        <p>Publicamos, conectamos as automações e acompanhamos os primeiros resultados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">Por que a Automatize</span>
+      <h2>Menos enrolação, <span class="accent">mais resultado</span></h2>
+      <p>Combinamos design elegante com automação inteligente para o seu site trabalhar por você.</p>
+    </div>
+
+    <div class="features-grid reveal">
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+        <h4>Entrega rápida</h4>
+        <p>Seu site no ar em até 5 dias úteis, sem perder qualidade.</p>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg>
+        <h4>Design sob medida</h4>
+        <p>Layout exclusivo pensado para a identidade do seu negócio.</p>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        <h4>SEO otimizado</h4>
+        <p>Estrutura técnica pensada para ser encontrado no Google.</p>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <h4>Automação de leads</h4>
+        <p>Agentes de IA no WhatsApp e Telegram atendendo por você, como um Jarvis particular do seu negócio.</p>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <h4>Suporte contínuo</h4>
+        <p>Estamos ao seu lado depois do lançamento, sempre que precisar.</p>
+      </div>
+      <div class="feature-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h4>Preço justo</h4>
+        <p>Planos claros, sem taxas escondidas, cabendo no seu orçamento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">Portfólio</span>
+      <h2>Alguns exemplos do que podemos construir <span class="accent">juntos</span></h2>
+      <p>Conceitos de sites desenvolvidos sob medida para diferentes segmentos.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card reveal">
+        <div class="portfolio-thumb pt-1">
+          <div class="portfolio-thumb-top">
+            <span class="browser-dots"><span></span><span></span><span></span></span>
+            <span class="tag">Saúde</span>
+          </div>
+          <div class="portfolio-mock">
+            <div class="portfolio-mock-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg></div>
+            <div class="portfolio-mock-title">Cuide do seu sorriso</div>
+            <div class="portfolio-mock-btn">Agendar consulta</div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <h3>Clínica odontológica</h3>
+          <p>Agendamento online e captação de pacientes via WhatsApp.</p>
+        </div>
+      </div>
+      <div class="portfolio-card reveal">
+        <div class="portfolio-thumb pt-2">
+          <div class="portfolio-thumb-top">
+            <span class="browser-dots"><span></span><span></span><span></span></span>
+            <span class="tag">Varejo</span>
+          </div>
+          <div class="portfolio-mock">
+            <div class="portfolio-mock-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M1 1h4l2.6 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+            <div class="portfolio-mock-title">Nova coleção chegou</div>
+            <div class="portfolio-mock-btn">Ver produtos</div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <h3>Loja de roupas</h3>
+          <p>Catálogo digital com checkout simplificado e integração com Instagram.</p>
+        </div>
+      </div>
+      <div class="portfolio-card reveal">
+        <div class="portfolio-thumb pt-3">
+          <div class="portfolio-thumb-top">
+            <span class="browser-dots"><span></span><span></span><span></span></span>
+            <span class="tag">Serviços</span>
+          </div>
+          <div class="portfolio-mock">
+            <div class="portfolio-mock-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <div class="portfolio-mock-title">Assessoria de confiança</div>
+            <div class="portfolio-mock-btn">Fale conosco</div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <h3>Escritório de advocacia</h3>
+          <p>Site institucional com formulário de consulta e prova social.</p>
+        </div>
+      </div>
+    </div>
+    <p class="portfolio-note">Quer ver o portfólio completo ou um projeto parecido com o seu segmento? <a href="#contato" class="accent">Fale com a gente</a>.</p>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials" id="depoimentos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">Depoimentos</span>
+      <h2>Resultados que <span class="accent">falam por si</span></h2>
+      <p>O que dizem os negócios que confiaram na Automatize.</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="t-card reveal">
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="quote">"O site ficou muito mais profissional do que eu imaginava, e já no primeiro mês recebi vários orçamentos pelo WhatsApp direto do site."</p>
+        <div class="t-author">
+          <div class="t-avatar">C</div>
+          <div><strong>Camila R.</strong><span>Salão de beleza</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="quote">"Processo rápido e transparente do início ao fim. Em menos de uma semana o site já estava no ar e gerando contato de clientes novos."</p>
+        <div class="t-author">
+          <div class="t-avatar">R</div>
+          <div><strong>Rodrigo M.</strong><span>Escritório de advocacia</span></div>
+        </div>
+      </div>
+      <div class="t-card reveal">
+        <div class="t-stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="quote">"Finalmente um site que combina com a cara do meu restaurante. O cardápio digital e o botão de reserva facilitaram demais o dia a dia."</p>
+        <div class="t-author">
+          <div class="t-avatar">L</div>
+          <div><strong>Larissa P.</strong><span>Restaurante</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="pricing" id="precos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">Investimento</span>
+      <h2>Planos <span class="accent">simples e transparentes</span></h2>
+      <p>Escolha o plano ideal para o momento do seu negócio. Sem taxas escondidas.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Start</h3>
+        <p class="desc">Para quem precisa de presença digital rápida e profissional.</p>
+        <div class="price-value"><span class="cycle">10x de</span><span class="amount">R$ 89,70</span></div>
+        <p class="price-installment">R$ 897 à vista</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Site de até 5 páginas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Design responsivo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Botão de WhatsApp</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Entrega em até 5 dias</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-plan="Start">Escolher Start</button>
+      </div>
+
+      <div class="price-card featured reveal">
+        <span class="price-badge">Mais escolhido</span>
+        <h3>Profissional</h3>
+        <p class="desc">O pacote completo para vender e captar leads todos os dias.</p>
+        <div class="price-value"><span class="cycle">10x de</span><span class="amount">R$ 169,70</span></div>
+        <p class="price-installment">R$ 1.697 à vista</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Site de até 10 páginas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Design exclusivo sob medida</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automação de leads (WhatsApp + formulário)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Banco de dados e painel de leads inclusos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>SEO otimizado</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>30 dias de suporte incluso</li>
+        </ul>
+        <button type="button" class="btn btn-primary btn-block js-open-lead" data-plan="Profissional">Escolher Profissional</button>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Escala</h3>
+        <p class="desc">Para negócios que precisam de loja virtual ou integrações avançadas.</p>
+        <div class="price-value"><span class="cycle">10x de</span><span class="amount">R$ 250,00</span></div>
+        <p class="price-installment">R$ 2.500 à vista</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Loja virtual completa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Integração com CRM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automações personalizadas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Suporte prioritário</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-plan="Escala">Falar com especialista</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow section-tag">Dúvidas frequentes</span>
+      <h2>Perguntas <span class="accent">frequentes</span></h2>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">Quanto tempo leva para meu site ficar pronto?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Em média, seu site fica pronto em até 5 dias úteis após a aprovação do layout, dependendo da complexidade do projeto e do envio dos conteúdos.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Preciso enviar textos e fotos prontos?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Não necessariamente. Ajudamos na organização do conteúdo e podemos sugerir textos e imagens de banco para deixar tudo pronto para publicação.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">O site funciona bem no celular?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim. Todos os nossos sites são 100% responsivos e testados em diferentes dispositivos antes da entrega.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Como funciona a automação de leads?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Conectamos formulários e botões do site diretamente ao seu WhatsApp e, se necessário, a ferramentas de CRM, para que nenhum contato se perca.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Existe suporte depois da entrega?<span class="plus"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim, todos os planos incluem um período de suporte após o lançamento para pequenos ajustes e dúvidas.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-banner" id="contato">
+  <div class="cta-box reveal">
+    <span class="eyebrow section-tag">Vamos começar</span>
+    <h2>Pronto para ter um site <span class="accent">pensado pra você</span>?</h2>
+    <p>Escolha o plano ideal para o seu negócio e receba um diagnóstico personalizado e gratuito.</p>
+    <div class="hero-actions">
+      <a href="#precos" class="btn btn-primary">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Escolher meu plano
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="logo">
+          <img src="assets/logo-mark.png" alt="Automatize" class="logo-mark">
+          Automatize<span class="logo-dot">.</span>
+        </a>
+        <p>Sites profissionais e automações para empresas e pequenos negócios que querem vender todos os dias.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/autbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v1.5A6 6 0 0 1 16 8z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#processo">Processo</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#precos">Preços</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Landing Pages</a></li>
+          <li><a href="#servicos">Sites institucionais</a></li>
+          <li><a href="#servicos">Lojas virtuais</a></li>
+          <li><a href="#servicos">Automações</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:automaizzemybusiness@gmail.com">automaizzemybusiness@gmail.com</a></li>
+          <li><a href="https://wa.me/5565999868334">+55 65 99986-8334</a></li>
+          <li><a href="#">Brasil · Atendimento remoto</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Automaizze. Todos os direitos reservados.</span>
+      <a href="../">Automaizze IA</a>
+      <a href="../agentesIA/">Agentes de IA</a>
+      <a href="../assistentepessoal/">Assistente Pessoal</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= LEAD FLOW MODAL ================= -->
+<div class="lead-modal" id="leadModal" aria-hidden="true">
+  <div class="lead-modal-backdrop" data-lead-close></div>
+  <div class="lead-modal-panel" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+    <button type="button" class="lead-modal-close" data-lead-close aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lead-progress"><span class="lead-progress-bar" id="leadProgressBar"></span></div>
+
+    <div class="lead-step" data-step="1">
+      <span class="eyebrow">Passo 1 de 4</span>
+      <h3 id="leadModalTitle">Qual o nome do seu negócio?</h3>
+      <p class="lead-step-sub">Assim já deixamos o diagnóstico do plano <strong id="leadPlanLabel1">Profissional</strong> personalizado com o seu nome.</p>
+      <input type="text" class="lead-input" id="leadBusiness" placeholder="Ex: Salão Bella Hair" autocomplete="off">
+      <input type="text" class="lead-input" id="leadWorkWith" placeholder="Trabalho com... (ex: cortes de cabelo e barba)" autocomplete="off">
+    </div>
+
+    <div class="lead-step" data-step="2">
+      <span class="eyebrow">Passo 2 de 4</span>
+      <h3>Qual o segmento do seu negócio?</h3>
+      <p class="lead-step-sub">Isso nos ajuda a indicar as automações certas para você.</p>
+      <div class="lead-chips" id="leadSegment">
+        <button type="button" class="chip" data-value="Clínica / Saúde">Clínica / Saúde</button>
+        <button type="button" class="chip" data-value="Loja / Varejo">Loja / Varejo</button>
+        <button type="button" class="chip" data-value="Restaurante">Restaurante</button>
+        <button type="button" class="chip" data-value="Advocacia">Advocacia</button>
+        <button type="button" class="chip" data-value="Salão de beleza">Salão de beleza</button>
+        <button type="button" class="chip" data-value="Imobiliária">Imobiliária</button>
+        <button type="button" class="chip" data-value="Academia">Academia</button>
+        <button type="button" class="chip" data-value="Outro">Outro</button>
+      </div>
+    </div>
+
+    <div class="lead-step" data-step="3">
+      <span class="eyebrow">Passo 3 de 4</span>
+      <h3>Qual seu maior objetivo com o site?</h3>
+      <p class="lead-step-sub">Vamos priorizar isso no seu diagnóstico.</p>
+      <div class="lead-chips" id="leadGoal">
+        <button type="button" class="chip" data-value="Captar mais clientes">Captar mais clientes</button>
+        <button type="button" class="chip" data-value="Profissionalizar minha marca">Profissionalizar minha marca</button>
+        <button type="button" class="chip" data-value="Vender online">Vender online</button>
+        <button type="button" class="chip" data-value="Automatizar atendimento">Automatizar atendimento</button>
+      </div>
+    </div>
+
+    <div class="lead-step" data-step="4">
+      <span class="eyebrow">Passo 4 de 4</span>
+      <h3>Para onde enviamos seu diagnóstico?</h3>
+      <p class="lead-step-sub">Sem spam. Só usamos isso para falar sobre o seu site.</p>
+      <input type="text" class="lead-input" id="leadName" placeholder="Seu nome" autocomplete="name">
+      <input type="tel" class="lead-input" id="leadPhone" placeholder="WhatsApp com DDD" autocomplete="tel">
+      <input type="email" class="lead-input" id="leadEmail" placeholder="E-mail" autocomplete="email">
+    </div>
+
+    <div class="lead-step lead-step-success" data-step="5">
+      <h3>Recebi teu interesse.</h3>
+      <p class="lead-step-sub">Vou te chamar no WhatsApp para falar sobre o plano <strong id="leadPlanLabel2">Profissional</strong>. Se quiser adiantar, me chama agora:</p>
+      <a href="#" id="leadWhatsappBtn" target="_blank" rel="noopener" class="lead-whatsapp-btn">Chamar no WhatsApp <span class="arrow">→</span></a>
+      <p class="lead-fallback">Se o botão não abrir, me chama no <strong>+55 65 99986-8334</strong>.</p>
+    </div>
+
+    <p class="lead-error" id="leadError"></p>
+
+    <div class="lead-nav" id="leadNav">
+      <button type="button" class="btn btn-ghost" id="leadBack">Voltar</button>
+      <button type="button" class="btn btn-primary" id="leadNext">Continuar</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

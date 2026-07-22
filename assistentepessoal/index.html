@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assistente Pessoal por Voz — Automaizze</title>
+<meta name="description" content="Um assistente pessoal treinado com os dados da sua empresa. Pergunte por voz e receba respostas na hora, direto do celular.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="logo">
+      <img src="assets/logo-mark.png" alt="Automaizze" class="logo-mark">
+      Automaizze <span class="logo-tag">Assistente Pessoal</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#usos">O que ele responde</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#funciona">Como funciona</a>
+      <a href="#planos">Planos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-cta">
+      <button type="button" class="btn btn-primary js-open-lead" data-product="Assistente Pessoal por Voz">
+        <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Falar no WhatsApp
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobilePanel">
+    <a href="#usos">O que ele responde</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#funciona">Como funciona</a>
+    <a href="#contato">Contato</a>
+    <button type="button" class="btn btn-primary btn-block js-open-lead" data-product="Assistente Pessoal por Voz">Falar no WhatsApp</button>
+  </div>
+</header>
+
+<div id="top"></div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">Assistente pessoal com IA</span>
+    <h1>Pergunte por voz. Receba a resposta certa — direto dos <span class="accent">dados da sua empresa</span>.</h1>
+    <p class="lead">Um assistente pessoal treinado com as informações do seu negócio, pra você tirar dúvidas na hora, falando, sem precisar abrir planilha nenhuma.</p>
+    <div class="hero-actions">
+      <button type="button" class="btn btn-primary js-open-lead" data-product="Assistente Pessoal por Voz">
+        Quero meu assistente
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <a href="#funciona" class="btn btn-outline">Ver como funciona</a>
+    </div>
+    <div class="hero-badges">
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Responde por voz ou texto</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Dados só seus, privados</span>
+      <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Direto do celular</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-visual reveal">
+      <div class="mac-window">
+        <div class="mac-bar">
+          <span class="mac-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></span>
+          <span class="mac-title">Assistente Pessoal — Automaizze</span>
+        </div>
+        <div class="voice-body">
+          <div class="voice-mic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v4M8 23h8"/></svg></div>
+          <div class="voice-wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="voice-transcript">
+            <div class="voice-line user"><span class="voice-tag">Você</span> "Quantos leads entraram essa semana?"</div>
+            <div class="voice-line assistant"><span class="voice-tag">IA</span> "Essa semana entraram 47 leads, 12 já viraram clientes."</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STAT STRIP ================= -->
+<section class="stat-strip">
+  <div class="container stat-strip-grid">
+    <div class="stat-strip-item"><strong>100%</strong><span>Dados da sua empresa</span></div>
+    <div class="stat-strip-item"><strong>Voz</strong><span>ou texto, você escolhe</span></div>
+    <div class="stat-strip-item"><strong>24h</strong><span>Disponível quando precisar</span></div>
+  </div>
+</section>
+
+<!-- ================= USE CASES ================= -->
+<section class="usecases" id="usos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que ele responde</span>
+      <h2>Pergunte o que precisar, <span class="accent">na hora</span></h2>
+      <p>Exemplos reais de perguntas que dá pra fazer em voz alta.</p>
+    </div>
+    <div class="usecases-grid">
+      <div class="usecase-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>"Quanto faturei esse mês?"</div>
+      <div class="usecase-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>"Qual meu produto mais vendido?"</div>
+      <div class="usecase-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>"Quantos agendamentos tenho amanhã?"</div>
+      <div class="usecase-card reveal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>"Como está o estoque do item X?"</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="features" id="recursos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Recursos</span>
+      <h2>Seu <span class="accent">Jarvis particular</span>, treinado com seus dados</h2>
+      <p>Sem planilha, sem procurar informação perdida — só perguntar.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v4M8 23h8"/></svg></div>
+        <h3>Converse por voz ou texto</h3>
+        <p>Fale como se estivesse falando com um sócio — ou digite, se preferir.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div>
+        <h3>Baseado nos seus dados reais</h3>
+        <p>Respostas vêm do financeiro, estoque e processos da sua própria empresa.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+        <h3>Direto do seu celular</h3>
+        <p>Pergunta rápida entre uma reunião e outra, de onde você estiver.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Dados seguros e privados</h3>
+        <p>As informações são só suas — nada é compartilhado com terceiros.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Disponível a qualquer hora</h3>
+        <p>Não tem horário comercial — pergunte quando a dúvida surgir.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4M9 11h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H9M9 11V6a3 3 0 0 1 6 0v5"/></svg></div>
+        <h3>Sem planilha, sem perder tempo</h3>
+        <p>Acaba a busca manual — a resposta vem organizada, na hora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STEPS ================= -->
+<section class="steps" id="funciona">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do seus dados ao <span class="accent">assistente pronto</span></h2>
+      <p>Sem complicação técnica — a gente cuida da parte difícil.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-item reveal">
+        <div class="step-num">01</div>
+        <h3>Conectamos aos seus dados</h3>
+        <p>Financeiro, estoque, agenda — o que fizer sentido pro seu negócio.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">02</div>
+        <h3>Treinamos o assistente</h3>
+        <p>Ensinamos a IA a entender e responder sobre a sua empresa.</p>
+      </div>
+      <div class="step-item reveal">
+        <div class="step-num">03</div>
+        <h3>Você conversa por voz</h3>
+        <p>Pergunta quando quiser, do jeito que for mais natural pra você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PLANOS ================= -->
+<section class="pricing" id="planos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Planos</span>
+      <h2>Um assistente <span class="accent">sob medida</span> pro seu negócio</h2>
+      <p>Pagamento único de implantação — sem mensalidade escondida. Escolha o nível de automação que faz sentido agora.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <h3>Básico</h3>
+        <p class="price-desc">Pra começar a automatizar tarefas simples do dia a dia.</p>
+        <div class="price-value">R$ 397</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automação simples de tarefas (ex: planilhas e e-mails)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>1 dashboard básico de indicadores</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-product="Assistente Pessoal — Plano Básico (R$ 397)">Quero esse plano</button>
+      </div>
+
+      <div class="price-card price-card--featured reveal">
+        <span class="price-badge">Recomendado</span>
+        <h3>Profissional</h3>
+        <p class="price-desc">O mais escolhido por quem já sabe que quer automatizar de verdade.</p>
+        <div class="price-value">R$ 897</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Painel/dashboard inteligente integrado</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automações de rotinas complexas entre ferramentas (Google Workspace, Notion)</li>
+        </ul>
+        <button type="button" class="btn btn-primary btn-block js-open-lead" data-product="Assistente Pessoal — Plano Profissional (R$ 897)">Quero esse plano</button>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Avançado</h3>
+        <p class="price-desc">Pra empresas que querem um ecossistema completo de produtividade.</p>
+        <div class="price-value">R$ 1.797</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Ecossistema completo de produtividade interna com IA</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Relatórios preditivos e painéis sob medida</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-product="Assistente Pessoal — Plano Avançado (R$ 1.797)">Quero esse plano</button>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>Mentoria / Acompanhamento</h3>
+        <p class="price-desc">Consultoria individual pra mapear gargalos e estruturar fluxos.</p>
+        <div class="price-value">R$ 1.200</div>
+        <p class="price-note">pagamento único</p>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Consultoria individual pra mapear gargalos de produtividade na empresa</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Estruturação de fluxos e processos</li>
+        </ul>
+        <button type="button" class="btn btn-outline btn-block js-open-lead" data-product="Assistente Pessoal — Mentoria/Acompanhamento (R$ 1.200)">Quero essa mentoria</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-banner" id="contato">
+  <div class="cta-box reveal">
+    <span class="eyebrow">Vamos começar</span>
+    <h2>Pronto pra ter seu <span class="accent">Jarvis particular</span>?</h2>
+    <p>Fale com a gente e receba um orçamento personalizado pro seu assistente.</p>
+    <button type="button" class="btn btn-primary js-open-lead" data-product="Assistente Pessoal por Voz">
+      <span class="btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      Falar no WhatsApp
+    </button>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="assets/logo-mark.png" alt="Automaizze" class="logo-mark">
+          Automaizze
+        </a>
+        <p>Soluções de inteligência artificial sob medida para empresas que querem vender e atender melhor.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/autbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://wa.me/5565999868334" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Automaizze</h4>
+        <ul>
+          <li><a href="../">Automaizze IA</a></li>
+          <li><a href="../sites/">Automaizze Sites</a></li>
+          <li><a href="../agentesIA/">Agentes de IA</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:automaizzemybusiness@gmail.com">automaizzemybusiness@gmail.com</a></li>
+          <li><a href="https://wa.me/5565999868334">+55 65 99986-8334</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Automaizze. Todos os direitos reservados.</span>
+      <a href="../">← Automaizze IA</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= LEAD FLOW MODAL ================= -->
+<div class="lead-modal" id="leadModal" aria-hidden="true">
+  <div class="lead-modal-backdrop" data-lead-close></div>
+  <div class="lead-modal-panel" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle">
+    <button type="button" class="lead-modal-close" data-lead-close aria-label="Fechar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lead-progress"><span class="lead-progress-bar" id="leadProgressBar"></span></div>
+
+    <div class="lead-step" data-step="1">
+      <span class="eyebrow">Passo 1 de 4</span>
+      <h3 id="leadModalTitle">Qual o nome do seu negócio?</h3>
+      <p class="lead-step-sub">Assim já deixamos tudo pronto pra falar sobre o <strong id="leadPlanLabel1">Assistente Pessoal</strong> com você.</p>
+      <input type="text" class="lead-input" id="leadBusiness" placeholder="Ex: Salão Bella Hair" autocomplete="off">
+      <input type="text" class="lead-input" id="leadWorkWith" placeholder="Trabalho com... (ex: cortes de cabelo e barba)" autocomplete="off">
+    </div>
+
+    <div class="lead-step" data-step="2">
+      <span class="eyebrow">Passo 2 de 4</span>
+      <h3>Qual o ramo do seu negócio?</h3>
+      <p class="lead-step-sub">Isso nos ajuda a treinar o assistente com os dados certos.</p>
+      <div class="lead-chips" id="leadSegment">
+        <button type="button" class="chip" data-value="Clínica / Saúde">Clínica / Saúde</button>
+        <button type="button" class="chip" data-value="Loja / Varejo">Loja / Varejo</button>
+        <button type="button" class="chip" data-value="Restaurante">Restaurante</button>
+        <button type="button" class="chip" data-value="Advocacia">Advocacia</button>
+        <button type="button" class="chip" data-value="Salão de beleza">Salão de beleza</button>
+        <button type="button" class="chip" data-value="Imobiliária">Imobiliária</button>
+        <button type="button" class="chip" data-value="Academia">Academia</button>
+        <button type="button" class="chip" data-value="Outro">Outro</button>
+      </div>
+    </div>
+
+    <div class="lead-step" data-step="3">
+      <span class="eyebrow">Passo 3 de 4</span>
+      <h3>Qual seu maior objetivo?</h3>
+      <p class="lead-step-sub">Vamos priorizar isso na conversa.</p>
+      <div class="lead-chips" id="leadGoal">
+        <button type="button" class="chip" data-value="Ter mais controle do negócio">Ter mais controle do negócio</button>
+        <button type="button" class="chip" data-value="Economizar tempo">Economizar tempo</button>
+        <button type="button" class="chip" data-value="Tomar decisões mais rápido">Tomar decisões mais rápido</button>
+        <button type="button" class="chip" data-value="Organizar os dados da empresa">Organizar os dados da empresa</button>
+      </div>
+    </div>
+
+    <div class="lead-step" data-step="4">
+      <span class="eyebrow">Passo 4 de 4</span>
+      <h3>Para onde te chamamos?</h3>
+      <p class="lead-step-sub">Sem spam. Só usamos isso pra falar com você.</p>
+      <input type="text" class="lead-input" id="leadName" placeholder="Seu nome" autocomplete="name">
+      <input type="tel" class="lead-input" id="leadPhone" placeholder="WhatsApp com DDD" autocomplete="tel">
+      <input type="email" class="lead-input" id="leadEmail" placeholder="E-mail" autocomplete="email">
+    </div>
+
+    <div class="lead-step lead-step-success" data-step="5">
+      <h3>Recebi teu interesse.</h3>
+      <p class="lead-step-sub">Vou te chamar no WhatsApp para falar sobre o <strong id="leadPlanLabel2">Assistente Pessoal</strong>. Se quiser adiantar, me chama agora:</p>
+      <a href="#" id="leadWhatsappBtn" target="_blank" rel="noopener" class="lead-whatsapp-btn">Chamar no WhatsApp <span class="arrow">→</span></a>
+      <p class="lead-fallback">Se o botão não abrir, me chama no <strong>+55 65 99986-8334</strong>.</p>
+    </div>
+
+    <p class="lead-error" id="leadError"></p>
+
+    <div class="lead-nav" id="leadNav">
+      <button type="button" class="btn btn-ghost" id="leadBack">Voltar</button>
+      <button type="button" class="btn btn-primary" id="leadNext">Continuar</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="assets/supabase-config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

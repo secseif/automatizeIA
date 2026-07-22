@@ -1,34 +1,60 @@
-// Nav scroll state
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 20);
-}, { passive: true });
+// Folder sidebar <-> pane switching
+const folderItems = document.querySelectorAll('.folder-item[data-target]');
+const panes = document.querySelectorAll('.pane[data-pane]');
+const windowPath = document.getElementById('windowPath');
+const windowBody = document.querySelector('.window-body');
 
-// Mobile menu toggle
-const navToggle = document.getElementById('navToggle');
-const mobilePanel = document.getElementById('mobilePanel');
-navToggle.addEventListener('click', () => {
-  navToggle.classList.toggle('active');
-  mobilePanel.classList.toggle('open');
-});
-mobilePanel.querySelectorAll('a, button').forEach(link => {
-  link.addEventListener('click', () => {
-    navToggle.classList.remove('active');
-    mobilePanel.classList.remove('open');
-  });
+const paneLabels = {
+  inicio: 'Início',
+  sobre: 'Sobre a Automaizze',
+  projetos: 'Projetos & Clientes',
+  plugplay: 'Plug & Play',
+  contato: 'Contato'
+};
+
+function goToPane(target) {
+  panes.forEach(p => p.classList.toggle('active', p.dataset.pane === target));
+  folderItems.forEach(f => f.classList.toggle('active', f.dataset.target === target));
+  if (windowPath) windowPath.textContent = `Automaizze IA / ${paneLabels[target] || target}`;
+  windowBody.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
+  closeSidebar();
+}
+
+folderItems.forEach(item => {
+  item.addEventListener('click', () => goToPane(item.dataset.target));
 });
 
-// Scroll reveal
-const revealEls = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('in-view');
-      revealObserver.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
-revealEls.forEach(el => revealObserver.observe(el));
+document.querySelectorAll('[data-goto]').forEach(el => {
+  el.addEventListener('click', () => goToPane(el.dataset.goto));
+});
+
+// Mobile sidebar toggle
+const sidebar = document.getElementById('sidebar');
+const sidebarToggle = document.getElementById('sidebarToggle');
+const sidebarScrim = document.getElementById('sidebarScrim');
+
+function openSidebar() {
+  sidebar.classList.add('open');
+  sidebarScrim.classList.add('open');
+}
+function closeSidebar() {
+  sidebar.classList.remove('open');
+  sidebarScrim.classList.remove('open');
+}
+if (sidebarToggle) sidebarToggle.addEventListener('click', openSidebar);
+if (sidebarScrim) sidebarScrim.addEventListener('click', closeSidebar);
+
+// Menu bar clock
+const clockEl = document.getElementById('menubarClock');
+function updateClock() {
+  if (!clockEl) return;
+  const now = new Date();
+  const h = String(now.getHours()).padStart(2, '0');
+  const m = String(now.getMinutes()).padStart(2, '0');
+  clockEl.textContent = `${h}:${m}`;
+}
+updateClock();
+setInterval(updateClock, 15000);
 
 // Footer year
 const yearEl = document.getElementById('year');

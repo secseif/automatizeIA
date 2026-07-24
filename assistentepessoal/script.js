@@ -1,4 +1,4 @@
-// Nav scroll shadow
+// Nav scroll state
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 20);
@@ -11,7 +11,7 @@ navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('active');
   mobilePanel.classList.toggle('open');
 });
-mobilePanel.querySelectorAll('a, button').forEach(link => {
+mobilePanel.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
     navToggle.classList.remove('active');
     mobilePanel.classList.remove('open');
@@ -30,14 +30,25 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => revealObserver.observe(el));
 
-// Scroll-to-top floating button
-const scrollTopBtn = document.getElementById('scrollTop');
-window.addEventListener('scroll', () => {
-  scrollTopBtn.classList.toggle('show', window.scrollY > 500);
-}, { passive: true });
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+// Hero voice demo: cycle through a couple of example questions
+const voiceLines = [
+  { q: 'Quantos leads entraram essa semana?', a: 'Essa semana entraram 47 leads, 12 já viraram clientes.' },
+  { q: 'Qual meu produto mais vendido?', a: 'O mais vendido esse mês foi o combo Site + Carrossel.' },
+  { q: 'Quanto faturei esse mês?', a: 'Até agora você faturou R$ 18.400 esse mês.' }
+];
+const transcript = document.querySelector('.voice-transcript');
+let voiceIndex = 0;
+
+if (transcript) {
+  setInterval(() => {
+    voiceIndex = (voiceIndex + 1) % voiceLines.length;
+    const { q, a } = voiceLines[voiceIndex];
+    transcript.innerHTML = `
+      <div class="voice-line user"><span class="voice-tag">Você</span> "${q}"</div>
+      <div class="voice-line assistant"><span class="voice-tag">IA</span> "${a}"</div>
+    `;
+  }, 4000);
+}
 
 // Footer year
 const yearEl = document.getElementById('year');

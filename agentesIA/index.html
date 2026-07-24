@@ -13,8 +13,8 @@
 </head>
 <body>
 
-<header class="nav" id="nav">
-  <div class="container nav-inner">
+<div class="nav-wrap">
+  <header class="nav-inner" id="nav">
     <a href="#top" class="logo">
       <img src="assets/logo-mark.png" alt="Automaizze" class="logo-mark">
       Automaizze <span class="logo-tag">Agentes IA</span>
@@ -32,7 +32,7 @@
       </button>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
-  </div>
+  </header>
   <div class="mobile-panel" id="mobilePanel">
     <a href="#recursos">Recursos</a>
     <a href="#funciona">Como funciona</a>
@@ -40,7 +40,7 @@
     <a href="#contato">Contato</a>
     <button type="button" class="btn btn-primary btn-block js-open-lead" data-product="Agente de IA para WhatsApp">Falar no WhatsApp</button>
   </div>
-</header>
+</div>
 
 <div id="top"></div>
 
@@ -48,8 +48,8 @@
 <section class="hero">
   <div class="container hero-inner">
     <span class="eyebrow">Agentes de IA para WhatsApp</span>
-    <h1>Um atendente de <span class="accent">IA</span> que nunca dorme e nunca perde um lead.</h1>
-    <p class="lead">Seu agente de IA responde no WhatsApp, qualifica clientes e agenda horários — enquanto você foca no que importa pro seu negócio.</p>
+    <h1>Agentes de IA que <span class="accent">trabalham por você</span> no WhatsApp.</h1>
+    <p class="lead">Seu agente responde, qualifica e agenda direto na conversa — enquanto você foca no que importa pro seu negócio.</p>
     <div class="hero-actions">
       <button type="button" class="btn btn-primary js-open-lead" data-product="Agente de IA para WhatsApp">
         Quero meu agente de IA
@@ -66,19 +66,70 @@
 
   <div class="container">
     <div class="hero-visual reveal">
-      <div class="mac-window">
-        <div class="mac-bar">
-          <span class="mac-dots"><span class="d1"></span><span class="d2"></span><span class="d3"></span></span>
-          <span class="mac-title">WhatsApp — Agente Automaizze</span>
-        </div>
-        <div class="chat-body">
-          <div class="chat-bubble user">Oi, vocês fazem entrega hoje ainda?</div>
-          <div class="chat-bubble agent">
-            <span class="chat-agent-label">🤖 Agente IA</span>
-            Fazemos sim! 🚚 A entrega de hoje ainda está disponível até as 18h. Quer que eu já separe seu pedido?
+      <div class="app-window">
+        <div class="app-sidebar">
+          <span class="app-sidebar-title">Automaizze</span>
+          <div class="app-nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Conversas <span class="count">12</span>
           </div>
-          <div class="chat-bubble user">Quero sim, me manda o cardápio</div>
-          <div class="chat-typing" id="typingIndicator"><span></span><span></span><span></span></div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 5-6 8-6s6.5 2 8 6"/></svg>
+            Leads
+          </div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            Agenda
+          </div>
+          <div class="app-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            Relatórios
+          </div>
+        </div>
+        <div class="app-main">
+          <div class="app-main-head">
+            <h4>Conversas de hoje</h4>
+            <span>Atualizado agora</span>
+          </div>
+          <div class="app-convo-list">
+            <div class="app-convo-item">
+              <span class="app-convo-avatar">MJ</span>
+              <div class="app-convo-body">
+                <strong>Maria J.</strong>
+                <span>Quero agendar um horário pra sexta</span>
+              </div>
+              <div class="app-convo-meta">
+                <span class="time">agora</span>
+                <span class="tag live">Em andamento</span>
+              </div>
+            </div>
+            <div class="app-convo-item">
+              <span class="app-convo-avatar">RC</span>
+              <div class="app-convo-body">
+                <strong>Rodrigo C.</strong>
+                <span>Perfeito, obrigado pela ajuda!</span>
+              </div>
+              <div class="app-convo-meta">
+                <span class="time">2 min</span>
+                <span class="tag done">Resolvido</span>
+              </div>
+            </div>
+            <div class="app-convo-item">
+              <span class="app-convo-avatar">LF</span>
+              <div class="app-convo-body">
+                <strong>Luana F.</strong>
+                <span>Vocês entregam no bairro Jardim?</span>
+              </div>
+              <div class="app-convo-meta">
+                <span class="time">6 min</span>
+                <span class="tag done">Resolvido</span>
+              </div>
+            </div>
+          </div>
+          <div class="app-qa">
+            <div class="app-qa-line client"><span class="app-qa-tag">Cliente</span> Oi, vocês fazem entrega hoje ainda?</div>
+            <div class="app-qa-line agent"><span class="app-qa-tag">Agente</span> Fazemos sim! A entrega de hoje está disponível até as 18h. Quer que eu já separe seu pedido?</div>
+          </div>
         </div>
       </div>
     </div>
@@ -94,44 +145,78 @@
   </div>
 </section>
 
-<!-- ================= FEATURES ================= -->
-<section class="features" id="recursos">
+<!-- ================= COMPARISON ================= -->
+<section class="compare" id="recursos">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow">Recursos</span>
-      <h2>Tudo que seu <span class="accent">atendimento</span> precisa</h2>
-      <p>Um agente treinado especificamente com as informações do seu negócio.</p>
+      <span class="eyebrow">Antes e depois</span>
+      <h2>Do atendimento <span class="accent">manual</span> pro atendimento <span class="accent">automático</span></h2>
+      <p>Veja a diferença de ter um agente de IA cuidando do seu WhatsApp.</p>
     </div>
-    <div class="features-grid">
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <h3>Atendimento 24 horas</h3>
-        <p>Responde clientes de madrugada, fim de semana e feriado, sem parar.</p>
+    <div class="compare-grid">
+      <div class="compare-card problem reveal">
+        <div class="compare-shot problem">
+          <span class="tag">Sem agente de IA</span>
+          <div class="compare-mini">
+            <div class="compare-mini-row"><span class="dot"></span> Cliente manda mensagem <span class="wait">18:42</span></div>
+            <div class="compare-mini-row muted"><span class="dot"></span> Sem resposta <span class="wait">19h+</span></div>
+            <div class="compare-mini-row muted"><span class="dot"></span> Cliente desiste e compra do concorrente</div>
+          </div>
+        </div>
+        <div class="compare-body">
+          <h3>O jeito manual</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Mensagens acumulam fora do horário comercial</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Leads esfriam e somem na fila de conversas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>Equipe responde as mesmas perguntas o dia todo</li>
+          </ul>
+        </div>
       </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg></div>
-        <h3>Qualificação de leads</h3>
-        <p>Identifica quem está pronto pra comprar antes de te chamar pra fechar.</p>
+      <div class="compare-card solution reveal">
+        <div class="compare-shot solution">
+          <span class="tag">Com Automaizze</span>
+          <div class="compare-mini">
+            <div class="compare-mini-row"><span class="dot"></span> Cliente manda mensagem <span class="wait">18:42</span></div>
+            <div class="compare-mini-row"><span class="dot"></span> Agente responde <span class="wait">18:42</span></div>
+            <div class="compare-mini-row"><span class="dot"></span> Horário agendado e lead qualificado <span class="wait">18:44</span></div>
+          </div>
+        </div>
+        <div class="compare-body">
+          <h3>Com agente de IA</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Resposta em segundos, a qualquer hora do dia</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Todo lead é qualificado antes de chegar até você</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sua equipe só entra quando realmente precisa</li>
+          </ul>
+        </div>
       </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-        <h3>Agendamento automático</h3>
-        <p>Marca horários direto na conversa, sem ida e volta de mensagens.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BENEFITS ================= -->
+<section class="benefits">
+  <div class="container">
+    <div class="benefits-grid">
+      <div class="benefit-card reveal">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/></svg></div>
+        <h3>Mais vendas, menos trabalho</h3>
+        <p>O agente qualifica e conduz a conversa até o fechamento, sem você precisar acompanhar cada mensagem.</p>
       </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
-        <h3>Respostas instantâneas</h3>
-        <p>Zero fila de espera — o cliente é respondido no mesmo segundo.</p>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h3>Tudo no mesmo lugar</h3>
+        <p>Conversas, leads e agendamentos organizados em um único painel, sem planilha e sem post-it.</p>
       </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg></div>
-        <h3>Conhece seu negócio</h3>
-        <p>Treinado com seus produtos, preços e políticas — responde como você responderia.</p>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+        <h3>Respostas em segundos, 24/7</h3>
+        <p>Nenhum cliente espera. O agente atende de madrugada, fim de semana e feriado.</p>
       </div>
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Transfere pra um humano</h3>
-        <p>Quando a conversa precisa de você, o agente te chama na hora certa.</p>
+      <div class="benefit-card reveal">
+        <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+        <h3>Visão clara do que entra e sai</h3>
+        <p>Acompanhe quantas conversas viraram lead, quantas viraram venda e onde estão travando.</p>
       </div>
     </div>
   </div>
@@ -171,7 +256,7 @@
 </section>
 
 <!-- ================= PLANOS ================= -->
-<section class="pricing" id="planos">
+<section class="pricing dark-surface" id="planos">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Planos</span>
@@ -285,6 +370,16 @@
     </div>
   </div>
 </footer>
+
+<!-- ================= FLOATING WIDGETS ================= -->
+<div class="float-widgets">
+  <button type="button" class="scroll-top" id="scrollTopBtn" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15 12 9 6 15"/></svg>
+  </button>
+  <a href="https://wa.me/5565999868334" target="_blank" rel="noopener" class="whatsapp-fab" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.05c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.38.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.37-.44.5-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.71-.83.9-1.11.19-.29.38-.24.63-.15.26.1 1.65.78 1.93.92.29.15.48.22.55.34.07.13.07.72-.17 1.42z"/></svg>
+  </a>
+</div>
 
 <!-- ================= LEAD FLOW MODAL ================= -->
 <div class="lead-modal" id="leadModal" aria-hidden="true">

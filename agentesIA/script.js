@@ -30,15 +30,15 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 revealEls.forEach(el => revealObserver.observe(el));
 
-// Hero chat: loop the typing indicator into a reply for a bit of life
-const typingIndicator = document.getElementById('typingIndicator');
-if (typingIndicator) {
-  setTimeout(() => {
-    const bubble = document.createElement('div');
-    bubble.className = 'chat-bubble agent';
-    bubble.innerHTML = '<span class="chat-agent-label">🤖 Agente IA</span>Show! Vou te mandar o cardápio agora, só um segundo 👇';
-    typingIndicator.replaceWith(bubble);
-  }, 1800);
+// Scroll-to-top button
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+if (scrollTopBtn) {
+  window.addEventListener('scroll', () => {
+    scrollTopBtn.classList.toggle('show', window.scrollY > 500);
+  }, { passive: true });
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 }
 
 // Footer year
